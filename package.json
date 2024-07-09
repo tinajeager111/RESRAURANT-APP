@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mesas": "json-server --watch DATABASE/mesas.json --port 4000",
+    "menu": "json-server --watch DATABASE/menu.json --port 4001",
+    "db": "json-server --watch DATABASE/db.json --port 4002",
+    "users": "nodemon SERVIDOR/views/home/index2.js",
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "json-server": "^1.0.0-alpha.23",
+    "mongoose": "^8.3.4",
+    "nodemon": "^3.1.0",
+    "path": "^0.12.7"
+  }
+}
